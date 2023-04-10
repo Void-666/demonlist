@@ -1,0 +1,24 @@
+<h2>Demonlist</h2>
+<script>
+// Define a Demon class
+class Demon {
+  constructor(name, difficulty) {
+    this.name = name;
+    this.difficulty = difficulty;
+  }
+}
+
+// Create a Demon list
+const demonList = [];
+
+//Add Demons to the list
+demonList.push(new Demon("Bloodlust", "Extreme Demon"));
+demonList.push(new Demon("Yatagarasu", "Extreme Demon"));
+demonList.push(new Demon("I Said Baaah!", "Insane Demon"));
+demonList.push(new Demon("The Cursed Demon", "Medium Demon"));
+
+// Print the Demon list
+for (let i = 0; i < demonList.length; i++) {
+  document.writeln(`${i + 1}. ${demonList[i].name} - ${demonList[i].difficulty}<br>`);
+}
+</script>
